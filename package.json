@@ -1,0 +1,31 @@
+{
+  "name": "vscode-toggle-theme",
+  "displayName": "Toggle dark theme",
+  "description": "Adds a status bar item to quickly toggle between light and dark theme",
+  "version": "0.1.0",
+  "repository": "https://github.com/ralfstx/vscode-toggle-theme",
+  "publisher": "ralfstx",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "main": "./out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "mkdir -p dist && vsce package -o dist/vscode-toggle-theme.vsix",
+    "deploy:local": "npm run package && code --install-extension dist/vscode-toggle-theme.vsix --force"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.69.0",
+    "typescript": "^4.7.4",
+    "vsce": "^2.10.0",
+    "vscode-test": "^1.6.1"
+  }
+}
