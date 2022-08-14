@@ -2,8 +2,12 @@
   "name": "vscode-toggle-theme",
   "displayName": "Toggle dark theme",
   "description": "Adds a status bar item to quickly toggle between light and dark theme",
-  "version": "0.1.0",
-  "repository": "https://github.com/ralfstx/vscode-toggle-theme",
+  "version": "0.1.1",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ralfstx/vscode-toggle-theme"
+  },
   "publisher": "ralfstx",
   "categories": [
     "Other"
